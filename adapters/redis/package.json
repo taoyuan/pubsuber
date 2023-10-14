@@ -1,7 +1,7 @@
 {
   "name": "@pubsuber/redis",
   "description": "The redis adapter for pubsuber",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
