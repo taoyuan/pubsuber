@@ -1,7 +1,7 @@
 {
   "name": "@pubsuber/testlab",
   "description": "This module is a set of utilities for testing other **pubsuber** modules.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
