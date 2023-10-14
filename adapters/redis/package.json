@@ -1,0 +1,44 @@
+{
+  "name": "@pubsuber/redis",
+  "description": "The redis adapter for pubsuber",
+  "version": "0.1.0",
+  "keywords": [],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=16"
+  },
+  "author": "TY",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "nb-tsc -b",
+    "clean": "del 'pubsuber-redis*.tgz' 'dist/*' '*.tsbuildinfo' 'package'",
+    "pretest": "yarn run clean && yarn run build",
+    "test": "yarn run pretest && yarn run jest",
+    "jest": "jest"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "redis": "^4.6.10"
+  },
+  "devDependencies": {
+    "@nutol/build": "^0.2.14",
+    "@nutol/eslint-config": "^0.2.9",
+    "@nutol/ts-config": "^0.2.1",
+    "@pubsuber/core": "workspace:^",
+    "@types/debug": "^4.1.9",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.1",
+    "del-cli": "^5.0.0",
+    "jest": "^29.6.1"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ]
+}
